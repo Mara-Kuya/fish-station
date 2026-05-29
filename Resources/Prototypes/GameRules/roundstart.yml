@@ -146,9 +146,9 @@
   id: Nukeops
   components:
   - type: GameRule
-    minPlayers: 35 # Fish-edit
+    minPlayers: 50
   - type: LoadMapRule
-    mapPath: /Maps/_Fish/Nonstations/nukieplanet.yml # Fish-Edit
+    mapPath: /Maps/_Sunrise/Nonstations/nukieplanet.yml # Sunrise-Edit
   - type: AntagSelection
     selectionTime: PrePlayerSpawn
     definitions:
@@ -489,7 +489,7 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 35 # Fish-edit
+    minPlayers: 20
     delay:
       min: 600
       max: 900
@@ -602,7 +602,7 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 35 # Слишком тяжело для меньшего количества игроков. # Fish-edit
+    minPlayers: 50 # Слишком тяжело для меньшего количества игроков.
   - type: RampingStationEventScheduler
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable
