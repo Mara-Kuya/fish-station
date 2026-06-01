@@ -8,9 +8,6 @@ namespace Content.Shared._Fish.Kitsune
     {
         [DataField]
         public List<EntityUid> Orbs = new();
-
-        [DataField("dieAt", customTypeSerializer: typeof(TimeOffsetSerializer))]
-        public TimeSpan DieAt;
     }
 
     [RegisterComponent, NetworkedComponent]
@@ -27,5 +24,8 @@ namespace Content.Shared._Fish.Kitsune
 
         [DataField]
         public EntityUid Parent;
+
+        [DataField("dieAt", customTypeSerializer: typeof(TimeOffsetSerializer))]
+        public TimeSpan DieAt;
     }
 }

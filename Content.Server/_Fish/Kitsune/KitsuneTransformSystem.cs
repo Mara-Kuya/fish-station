@@ -116,6 +116,8 @@ public sealed class KitsuneTransformSystem : EntitySystem
                 continue;
             _actions.RemoveAction(uid, actionEnt);
         }
+
+        _transformDurations.Remove(uid);
     }
 
     private void OnKitsuneTransform(EntityUid uid, KitsuneTransformComponent component, KitsuneTransformActionEvent args)
@@ -169,9 +171,6 @@ public sealed class KitsuneTransformSystem : EntitySystem
         // Store the original entity reference before polymorph
         component.StashedHumanoid = uid;
 
-        // Set transform duration timer
-        _transformDurations[uid] = TransformDurationSeconds;
-
         // Extract radio channels from ears slot before polymorph
         var channels = new HashSet<ProtoId<RadioChannelPrototype>>();
         if (TryComp<InventoryComponent>(uid, out var invComp) &&
@@ -185,6 +184,9 @@ public sealed class KitsuneTransformSystem : EntitySystem
 
         // Perform polymorph
         var newUid = _polymorph.PolymorphEntity(uid, prototype) ?? throw new ArgumentNullException("_polymorph.PolymorphEntity(uid, prototype)");
+
+        // Set transform duration timer
+        _transformDurations[newUid] = TransformDurationSeconds;
 
         // Apply intrinsic radio if we found any channels
         if (channels.Count > 0)
