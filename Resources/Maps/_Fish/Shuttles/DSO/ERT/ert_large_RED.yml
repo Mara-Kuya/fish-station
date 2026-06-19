@@ -9033,6 +9033,94 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,12.5
       parent: 1
+- proto: RandomHumanoidSpawnerERTEngineerGamma
+  entities:
+  - uid: 1271
+    components:
+    - type: Transform
+      pos: -2.5,-5.5
+      parent: 1
+  - uid: 1272
+    components:
+    - type: Transform
+      pos: -3.5,-5.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTLeaderRed
+  entities:
+  - uid: 714
+    components:
+    - type: Transform
+      pos: 0.5,-2.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTMedicalGamma
+  entities:
+  - uid: 1269
+    components:
+    - type: Transform
+      pos: 4.5,-5.5
+      parent: 1
+  - uid: 1273
+    components:
+    - type: Transform
+      pos: 3.5,-5.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTSecurityRed
+  entities:
+  - uid: 1268
+    components:
+    - type: Transform
+      pos: -0.5,-5.5
+      parent: 1
+  - uid: 1270
+    components:
+    - type: Transform
+      pos: 1.5,-1.5
+      parent: 1
+  - uid: 1323
+    components:
+    - type: Transform
+      pos: 0.5,-5.5
+      parent: 1
+  - uid: 1324
+    components:
+    - type: Transform
+      pos: 6.5,-4.5
+      parent: 1
+  - uid: 1325
+    components:
+    - type: Transform
+      pos: 1.5,-5.5
+      parent: 1
+  - uid: 1326
+    components:
+    - type: Transform
+      pos: -5.5,-4.5
+      parent: 1
+  - uid: 1327
+    components:
+    - type: Transform
+      pos: -4.5,-4.5
+      parent: 1
+  - uid: 1328
+    components:
+    - type: Transform
+      pos: 5.5,-4.5
+      parent: 1
+  - uid: 1329
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 1
+  - uid: 1331
+    components:
+    - type: Transform
+      pos: -1.5,-1.5
+      parent: 1
+  - uid: 1332
+    components:
+    - type: Transform
+      pos: 2.5,-1.5
+      parent: 1
 - proto: RandomPosterLegit
   entities:
   - uid: 316

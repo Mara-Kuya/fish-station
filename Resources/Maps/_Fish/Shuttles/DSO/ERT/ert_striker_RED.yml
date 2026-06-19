@@ -4,8 +4,8 @@ meta:
   engineVersion: 271.1.0
   forkId: ""
   forkVersion: ""
-  time: 06/15/2026 13:19:56
-  entityCount: 644
+  time: 06/15/2026 13:26:12
+  entityCount: 653
 maps: []
 grids:
 - 1
@@ -1090,12 +1090,12 @@ entities:
     - type: Transform
       pos: 2.5,-1.5
       parent: 1
-  - uid: 643
+  - uid: 644
     components:
     - type: Transform
       pos: 0.5,-8.5
       parent: 1
-  - uid: 644
+  - uid: 646
     components:
     - type: Transform
       pos: 0.5,-9.5
@@ -1454,22 +1454,22 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -4.5,4.5
       parent: 1
-  - uid: 636
+  - uid: 637
     components:
     - type: Transform
       pos: 3.5,6.5
       parent: 1
-  - uid: 637
+  - uid: 638
     components:
     - type: Transform
       pos: -2.5,6.5
       parent: 1
-  - uid: 638
+  - uid: 639
     components:
     - type: Transform
       pos: -1.5,6.5
       parent: 1
-  - uid: 639
+  - uid: 640
     components:
     - type: Transform
       pos: 4.5,6.5
@@ -1805,7 +1805,7 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-  - uid: 401
+  - uid: 481
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -1815,7 +1815,7 @@ entities:
       fixtures: {}
 - proto: ClosetWallFireFilledRandom
   entities:
-  - uid: 82
+  - uid: 98
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -1995,7 +1995,7 @@ entities:
       parent: 1
 - proto: ComputerNTERTUplinkRed
   entities:
-  - uid: 336
+  - uid: 401
     components:
     - type: MetaData
       name: консоль аплинка ОБР красный
@@ -2011,7 +2011,7 @@ entities:
       parent: 1
 - proto: CrateFoodMRE
   entities:
-  - uid: 640
+  - uid: 641
     components:
     - type: Transform
       anchored: True
@@ -2021,7 +2021,7 @@ entities:
       bodyType: Static
 - proto: CrateMindShieldImplants
   entities:
-  - uid: 607
+  - uid: 608
     components:
     - type: Transform
       anchored: True
@@ -2043,7 +2043,6 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 608
           - 609
           - 610
           - 611
@@ -2070,6 +2069,7 @@ entities:
           - 632
           - 633
           - 634
+          - 635
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -3001,7 +3001,7 @@ entities:
       parent: 1
 - proto: GravityGeneratorMini
   entities:
-  - uid: 98
+  - uid: 190
     components:
     - type: Transform
       pos: 5.5,-2.5
@@ -3081,16 +3081,16 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,11.5
       parent: 1
-  - uid: 481
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,7.5
-      parent: 1
   - uid: 545
     components:
     - type: Transform
       pos: -3.5,7.5
+      parent: 1
+  - uid: 606
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.5,7.5
       parent: 1
 - proto: Gyroscope
   entities:
@@ -3100,7 +3100,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-2.5
       parent: 1
-  - uid: 325
+  - uid: 336
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -3523,7 +3523,7 @@ entities:
       parent: 1
 - proto: MedicalTechFab
   entities:
-  - uid: 606
+  - uid: 607
     components:
     - type: Transform
       pos: -3.5,-3.5
@@ -3642,222 +3642,222 @@ entities:
       storage: 440
 - proto: MindShieldImplanter
   entities:
-  - uid: 608
-    components:
-    - type: Transform
-      parent: 607
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-      storage: 607
   - uid: 609
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 610
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 611
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 612
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 613
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 614
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 615
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 616
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 617
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 618
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 619
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 620
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 621
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 622
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 623
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 624
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 625
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 626
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 627
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 628
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 629
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 630
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 631
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 632
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 633
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
   - uid: 634
     components:
     - type: Transform
-      parent: 607
+      parent: 608
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-      storage: 607
+      storage: 608
+  - uid: 635
+    components:
+    - type: Transform
+      parent: 608
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 608
 - proto: PenCentcom
   entities:
   - uid: 298
@@ -4049,6 +4049,54 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,10.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTEngineerGamma
+  entities:
+  - uid: 82
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTLeaderRed
+  entities:
+  - uid: 645
+    components:
+    - type: Transform
+      pos: 1.5,2.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTMedicalGamma
+  entities:
+  - uid: 647
+    components:
+    - type: Transform
+      pos: -2.5,-2.5
+      parent: 1
+- proto: RandomHumanoidSpawnerERTSecurityRed
+  entities:
+  - uid: 648
+    components:
+    - type: Transform
+      pos: -1.5,0.5
+      parent: 1
+  - uid: 649
+    components:
+    - type: Transform
+      pos: -0.5,0.5
+      parent: 1
+  - uid: 650
+    components:
+    - type: Transform
+      pos: 0.5,0.5
+      parent: 1
+  - uid: 651
+    components:
+    - type: Transform
+      pos: 1.5,0.5
+      parent: 1
+  - uid: 652
+    components:
+    - type: Transform
+      pos: 2.5,0.5
       parent: 1
 - proto: RCDAmmo
   entities:
@@ -4390,7 +4438,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,7.5
       parent: 1
-  - uid: 635
+  - uid: 636
     components:
     - type: Transform
       pos: -3.5,7.5
@@ -4454,7 +4502,7 @@ entities:
     - type: Transform
       pos: 5.5,-1.5
       parent: 1
-  - uid: 641
+  - uid: 642
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -4511,19 +4559,11 @@ entities:
       parent: 1
     - type: Airtight
       airBlocked: True
-  - uid: 190
-    components:
-    - type: Transform
-      anchored: True
-      pos: -3.5,1.5
-      parent: 1
-    - type: Airtight
-      airBlocked: True
   - uid: 195
     components:
     - type: Transform
       anchored: True
-      pos: 5.5,1.5
+      pos: -3.5,1.5
       parent: 1
     - type: Airtight
       airBlocked: True
@@ -4536,6 +4576,14 @@ entities:
     - type: Airtight
       airBlocked: True
   - uid: 262
+    components:
+    - type: Transform
+      anchored: True
+      pos: 5.5,1.5
+      parent: 1
+    - type: Airtight
+      airBlocked: True
+  - uid: 325
     components:
     - type: Transform
       anchored: True
@@ -5241,7 +5289,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 476
-  - uid: 642
+  - uid: 643
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -5261,7 +5309,7 @@ entities:
     - type: DeviceList
       devices:
       - 446
-      - 642
+      - 643
 - proto: WeaponTurretNanoTrasen
   entities:
   - uid: 71
