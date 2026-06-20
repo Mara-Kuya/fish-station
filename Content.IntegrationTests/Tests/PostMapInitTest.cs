@@ -77,6 +77,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Fish/Station/centcomm.yml",
             "/Maps/_Fish/Shuttles/Antag/**",
             "/Maps/_Fish/Shuttles/DSO/**",
+            "/Maps/_Fish/Shuttles/DSO/ERT/**",
             "/Maps/_Fish/Event/H3PO4/**",
             "/Maps/_Fish/Event/ANJEKNAVERNO/**",
             "/Maps/_Fish/Event/Masema/**",
