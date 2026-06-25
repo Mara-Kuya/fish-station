@@ -1477,8 +1477,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,1.5
       parent: 2
-    - type: Thruster
-      enabled: False
   - uid: 173
     components:
     - type: Transform
