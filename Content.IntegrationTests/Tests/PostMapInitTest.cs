@@ -121,6 +121,7 @@ namespace Content.IntegrationTests.Tests
             "FishPacked",
             "FishSnowball",
             "FishSuharik",
+            "FishGelta",
             // Fish - End
         };
 
