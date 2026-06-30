@@ -41,9 +41,10 @@
   id: JobBrigmedic
   groups:
   - BrigmedicJumpsuit
+  - BrigmedicOuterClothing
   - BrigmedicBackpack
   - BrigmedicInjectors
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - SunriseTrinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
@@ -85,6 +86,7 @@
   id: JobBlueShieldEnsign
   groups:
   - BlueShieldNeck
+  - BlueShieldOuterClothing # Fish-add
   - BlueShieldJumpsuit
   - BlueShieldBackpack
   - BlueShieldBelt
@@ -92,7 +94,7 @@
   - BlueShieldBra
   - BlueShieldPants
   - SunriseTrinkets
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - GroupSpeciesBreathTool
   - Socks
   - Contributors
@@ -101,6 +103,7 @@
   id: JobBlueShieldOfficer
   groups:
   - BlueShieldNeck
+  - BlueShieldOuterClothing # Fish-add
   - BlueShieldJumpsuit
   - BlueShieldBackpack
   - BlueShieldBelt
@@ -108,7 +111,7 @@
   - BlueShieldBra
   - BlueShieldPants
   - SunriseTrinkets
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - GroupSpeciesBreathTool
   - Socks
   - Contributors
@@ -121,6 +124,7 @@
   - BlueShieldBackpack
   - BlueShieldBelt
   - BlueShieldNeck
+  - BlueShieldOuterClothing # Fish-add
   - Trinkets
   - BlueshieldGun
   - SunriseTrinkets
@@ -142,7 +146,7 @@
   - SecurityBelt
   - SecurityShoes
   - SunriseSecurityGun
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - SunriseTrinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
@@ -256,7 +260,7 @@
   - SecurityShoes
   - SecurityBackpack
   - SunriseSecurityGun
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - SunriseTrinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
@@ -272,7 +276,7 @@
 #  - PrisonGuardJumpsuit
 #  - PrisonGuardBackpack
 #  - SecurityShoes
-#  - SurvivalSecurity
+#  - SunriseSurvivalSecurity
 #  - Trinkets
 #  - SecurityTrinkets
 #  - GroupSpeciesBreathTool
@@ -287,7 +291,7 @@
   - HeadOfPrisonJumpsuit
   #- PrisonGuardBackpack
   #- SecurityShoes
-  #- SurvivalSecurity
+  #- SunriseSurvivalSecurity
   #- Trinkets
   #- SecurityTrinkets
   #- GroupSpeciesBreathToolSecurity
@@ -414,7 +418,7 @@
 #  - PrisonGuardJumpsuit
 #  - PrisonGuardBackpack
 #  - SecurityShoes
-#  - SurvivalSecurity
+#  - SunriseSurvivalSecurity
 #  - Trinkets
 #  - SecurityTrinkets
 #  - GroupSpeciesBreathTool
