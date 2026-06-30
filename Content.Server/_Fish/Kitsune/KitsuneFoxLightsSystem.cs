@@ -20,9 +20,6 @@ namespace Content.Server._Fish.Kitsune
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedPopupSystem _popup = default!;
 
-        private readonly TimeSpan castTime = TimeSpan.FromSeconds(1); // 1 second cast time
-        private readonly TimeSpan lightDuration = TimeSpan.FromSeconds(90);
-
         public override void Initialize()
         {
             base.Initialize();
@@ -46,12 +43,15 @@ namespace Content.Server._Fish.Kitsune
 
             _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Sunrise/BloodCult/butcher.ogg"), args.Performer);
 
-            _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.Performer, castTime, new KitsuneFoxLightsDoAfterEvent(), args.Performer)
+            var doAfterArgs = new DoAfterArgs(EntityManager, args.Performer, comp.CastTime, new KitsuneFoxLightsDoAfterEvent(), args.Performer)
             {
                 BreakOnMove = false,
                 BreakOnDamage = false,
-                NeedHand = false
-            });
+                NeedHand = false,
+                Broadcast = true // FIsh edit: necessary for broadcast system subscription to run since component is deleted in update
+            };
+
+            _doAfter.TryStartDoAfter(doAfterArgs);
 
             args.Handled = true;
         }
@@ -73,7 +73,7 @@ namespace Content.Server._Fish.Kitsune
                 {
                     if (TryComp<KitsuneFoxLightsOrbComponent>(orb, out var orbComp))
                     {
-                        orbComp.DieAt = _timing.CurTime + lightDuration;
+                        orbComp.DieAt = _timing.CurTime + component.LightDuration;
                     }
                 }
             }

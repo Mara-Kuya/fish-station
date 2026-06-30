@@ -8,6 +8,12 @@ namespace Content.Shared._Fish.Kitsune
     {
         [DataField]
         public List<EntityUid> Orbs = new();
+
+        [DataField("lightDuration")]
+        public TimeSpan LightDuration = TimeSpan.FromSeconds(90);
+
+        [DataField("castTime")]
+        public TimeSpan CastTime = TimeSpan.FromSeconds(1);
     }
 
     [RegisterComponent, NetworkedComponent]

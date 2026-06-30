@@ -23,8 +23,6 @@ namespace Content.Server._Fish.Kitsune;
 
 public sealed class KitsuneTransformSystem : EntitySystem
 {
-    private const float TransformDurationSeconds = 240f; // 4 minutes
-    private const float TransformDoAfterDurationSeconds = 3f;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ActionsSystem _actions = default!;
     [Dependency] private readonly DoAfterSystem _doAfter = default!;
@@ -131,7 +129,7 @@ public sealed class KitsuneTransformSystem : EntitySystem
         }
 
         // Start the do-after
-        var doAfterArgs = new DoAfterArgs(EntityManager, uid, TimeSpan.FromSeconds(TransformDoAfterDurationSeconds),
+        var doAfterArgs = new DoAfterArgs(EntityManager, uid, TimeSpan.FromSeconds(component.Delay),
             new KitsuneTransformDoAfterEvent(),
             uid)
         {
@@ -186,7 +184,7 @@ public sealed class KitsuneTransformSystem : EntitySystem
         var newUid = _polymorph.PolymorphEntity(uid, prototype) ?? throw new ArgumentNullException("_polymorph.PolymorphEntity(uid, prototype)");
 
         // Set transform duration timer
-        _transformDurations[newUid] = TransformDurationSeconds;
+        _transformDurations[newUid] = component.Duration;
 
         // Apply intrinsic radio if we found any channels
         if (channels.Count > 0)
