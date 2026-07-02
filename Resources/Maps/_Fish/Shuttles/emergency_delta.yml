@@ -4,8 +4,8 @@ meta:
   engineVersion: 271.1.0
   forkId: ""
   forkVersion: ""
-  time: 06/19/2026 19:26:55
-  entityCount: 1427
+  time: 07/02/2026 21:45:30
+  entityCount: 1428
 maps: []
 grids:
 - 410
@@ -42,7 +42,7 @@ entities:
   - uid: 410
     components:
     - type: MetaData
-      name: NT Evac Gamma 591
+      name: NT Evac Delta
     - type: Transform
       pos: 2.2710133,-2.4148211
       parent: invalid
@@ -7890,11 +7890,6 @@ entities:
     - type: Transform
       pos: -16.5,-0.5
       parent: 410
-  - uid: 1143
-    components:
-    - type: Transform
-      pos: -12.5,15.5
-      parent: 410
   - uid: 1308
     components:
     - type: Transform
@@ -8080,6 +8075,13 @@ entities:
       parent: 410
     - type: Fixtures
       fixtures: {}
+- proto: ShuttleAnchorOff
+  entities:
+  - uid: 1143
+    components:
+    - type: Transform
+      pos: -12.5,15.5
+      parent: 410
 - proto: ShuttleWindow
   entities:
   - uid: 7
@@ -8484,9 +8486,9 @@ entities:
     - type: Transform
       pos: -14.5,-8.5
       parent: 410
-- proto: SMESBasic
+- proto: SMESExtended
   entities:
-  - uid: 1128
+  - uid: 1428
     components:
     - type: Transform
       pos: -8.5,-6.5
@@ -8661,6 +8663,14 @@ entities:
       parent: 410
     - type: Airtight
       airBlocked: True
+  - uid: 525
+    components:
+    - type: Transform
+      anchored: True
+      pos: -13.5,1.5
+      parent: 410
+    - type: Airtight
+      airBlocked: True
   - uid: 737
     components:
     - type: Transform
@@ -8682,6 +8692,14 @@ entities:
     - type: Transform
       anchored: True
       pos: -13.5,1.5
+      parent: 410
+    - type: Airtight
+      airBlocked: True
+  - uid: 1128
+    components:
+    - type: Transform
+      anchored: True
+      pos: -1.5,1.5
       parent: 410
     - type: Airtight
       airBlocked: True
@@ -8782,11 +8800,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -10.5,12.5
       parent: 410
-  - uid: 525
-    components:
-    - type: Transform
-      pos: -12.5,15.5
-      parent: 410
   - uid: 529
     components:
     - type: Transform
@@ -8864,6 +8877,7 @@ entities:
         path: ""
     missingComponents:
     - TelecomThermal
+    - Temperature
 - proto: Thruster
   entities:
   - uid: 84
