@@ -9,11 +9,3 @@ ent-ClothingHandsGlovesDeathSquadFish = death squad combat gloves
 ent-ClothingHandsPowerGlovesUplinkNTERTDeathSquadFish = death squad combat gloves
     .desc = Elite tactical gloves with enhanced striking power and a built-in uplink for Death Squad operations.
     .suffix = Fish, Uplink, 80BC 80C
-
-ent-RandomHumanoidSpawnerDeathSquadFish = Death Squad Agent
-    .suffix = Fish, 200BC 200C
-    .desc = { "" }
-
-ent-RandomHumanoidSpawnerDeathSquadFishBudget = Death Squad Agent
-    .suffix = Fish, 80BC 80C
-    .desc = { "" }
