@@ -24,3 +24,18 @@
       - state: equipped-head-light
       head-dog:
       - state: equipped-head-light
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitDeathsquad
+  id: ClothingHeadHelmetHardsuitDeathsquadFish
+  suffix: Fish
+  components:
+  - type: PointLight
+    radius: 9
+    energy: 9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Poison: 0.80
+        Shock: 0.80
+  - type: ToggleableNightVision
