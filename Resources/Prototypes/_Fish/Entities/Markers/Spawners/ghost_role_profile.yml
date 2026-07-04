@@ -32,3 +32,17 @@
   - type: GhostRoleProfileSpawner
     factions:
     - Syndicate
+    - Pirate
+
+- type: entity
+  parent: SpawnPointFishGhostCharacterSpawner
+  id: SpawnPointFishGhostCharacterSpawnerPirate
+  name: ghost character spawner
+  suffix: Pirate, 1 Slot
+  components:
+  - type: GhostRole
+    name: ghost-role-information-fish-ghost-character-spawner-pirate-name
+    description: ghost-role-information-fish-ghost-character-spawner-pirate-description
+  - type: GhostRoleProfileSpawner
+    factions:
+    - Pirate
