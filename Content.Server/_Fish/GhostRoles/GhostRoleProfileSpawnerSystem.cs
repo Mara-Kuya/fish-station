@@ -6,6 +6,7 @@ using Content.Server.Station.Systems;
 using Content.Shared._Fish.GhostRoles.Components;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
+using Content.Shared.NPC.Systems;
 using Robust.Server.GameObjects;
 
 namespace Content.Server._Fish.GhostRoles;
@@ -18,6 +19,7 @@ public sealed class GhostRoleProfileSpawnerSystem : EntitySystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly GhostRoleSystem _ghostRole = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+    [Dependency] private readonly NpcFactionSystem _npcFaction = default!;
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
     [Dependency] private readonly StationSystem _stations = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
@@ -46,6 +48,9 @@ public sealed class GhostRoleProfileSpawnerSystem : EntitySystem
 
         var mob = _stationSpawning.SpawnPlayerMob(coords, null, profile, station);
         _transform.AttachToGridOrMap(mob);
+
+        if (ent.Comp.Factions.Count > 0)
+            _npcFaction.AddFactions((mob, null), ent.Comp.Factions);
 
         RaiseLocalEvent(mob, new GhostRoleSpawnerUsedEvent(ent, mob));
 
