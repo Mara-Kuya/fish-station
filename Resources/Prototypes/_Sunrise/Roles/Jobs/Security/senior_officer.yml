@@ -41,6 +41,7 @@
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
   storage: # Fish-edit
+    back:
     - RubberStampSeniorHos
 
 - type: chameleonOutfit
