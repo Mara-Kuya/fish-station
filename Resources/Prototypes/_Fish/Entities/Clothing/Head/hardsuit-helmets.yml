@@ -44,4 +44,23 @@
         Caustic: 0.95
         Poison: 0.80
         Shock: 0.80
-  - type: ToggleableNightVision
+  - type: ItemToggle
+    predictable: false
+    onUse: false
+    canActivateInhand: false
+    soundActivate:
+      path: /Audio/_Sunrise/Items/Goggles/activate.ogg
+    soundDeactivate:
+      path: /Audio/_Sunrise/Items/Goggles/deactivate.ogg
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: NightVision
+      effect: EffectNightVision
+  - type: ToggleClothing
+    action: NVDToggleAction
+    mustEquip: true
+    disableOnUnequip: true
+    targetSlot: head
