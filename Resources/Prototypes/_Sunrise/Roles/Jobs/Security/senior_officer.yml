@@ -40,6 +40,8 @@
     head: ClothingHeadHatBeretSecurity
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
+  storage: # Fish-edit
+    - RubberStampSeniorHos
 
 - type: chameleonOutfit
   id: SeniorOfficerChameleonOutfit
