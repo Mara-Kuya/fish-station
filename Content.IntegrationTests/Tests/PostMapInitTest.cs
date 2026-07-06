@@ -78,6 +78,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Fish/Shuttles/Antag/**",
             "/Maps/_Fish/Shuttles/DSO/**",
             "/Maps/_Fish/Shuttles/DSO/ERT/**",
+            "/Maps/_Fish/Shuttles/DSO/CBURN/**",
             "/Maps/_Fish/Nonstations/**",
             // Fish - End
         };
