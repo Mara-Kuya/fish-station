@@ -93,7 +93,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMaps =
         {
             // Fish - Start
-            "Dev",
+            //"Dev",
             //"TestTeg",
             //"Fland",
             //"Packed",
@@ -123,6 +123,7 @@ namespace Content.IntegrationTests.Tests
             "FishPacked",
             "FishSnowball",
             "FishSuharik",
+            "FishGelta",
             "FishTerraBiome",
             // Fish - End
         };
